@@ -5,7 +5,7 @@
 </h1>
 
 
-{% include youtube.html id="A3QtEFnUzeQ" %}
+<!-- {% include youtube.html id="A3QtEFnUzeQ" %} -->
 
 <h3 align="center">Dive into the exciting world of 2D fractals</h3>
 
@@ -18,63 +18,31 @@
 
 ## What it does?
 
-* Takes in a parameter of 
-* Dynamically allocates and stores the read line into a char ** pointer given as function's input 
-* By calling the function again, the function returns the next line on the given file.
-* By calling the function n times the function loops across the file n lines storing always next line to the pointer
-* Returns 1 if file has been read, 0 if we have reached end of the file and -1 if there is an error.
-* Can be called with multiple filedescriptors.
+* Takes in a parameter on the command line from the following 'mandlebrot set' 'julia set' 'burning ship'.
+* You can move forward and backwards into the fractal with using your mouse scroll.
+* The program zooms into the focus point of your mouse
+* With key <kbd>i</kbd> you can enable multithreading, which makes the window bigger and the program faster
+* By pressing the key <kbd>p</kbd> you can toggle between different fractals.
+* With the multithreading on, there are more fractal options to toggle from.
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and gcc compiler installed on your computer. This has been tested only on MacOs and linux. Run the following commands on the command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and gcc compiler installed on your computer. Also you need miniLibX graphics library which on my knowledge doesn't work on windows. This has been tested only on MacOs and linux. Run the following commands on the command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/PietarTheWise/get_next_line.git
-# Build the libft library by entering following lines to the console:
-$ cd libft/
+$ git clone https://github.com/PietarTheWise/fractol.git
+# Build the program by typing:
 $ make
-# if working on linux, remove -I in the makefile on line 29
+# in command line
 
-#To test it create two files
-$ touch test.txt && touch main.c
+#then run:
+$ ./fractol
 
-#Write some lines to test.txt. You can use editor or you can run the following on terminal
-$ echo read 1 >> test.txt && echo read 2 >> test.txt && echo read 3 >> test.txt && echo read 4 >> test.txt && echo read 5 >> test.txt
-```
+#note: the program will give you options on the command line, so for instance if you wan't mandlebrot set type:
 
+$ ./fractol 'mandlebrot set'
 
-```c
-// add the following on the main.c file:
-#include "get_next_line.h"
-#include <fcntl.h>
-#include <stdio.h>
-
-int main(int argc, char **argv)
-{
-	int		fd;
-	int		i;
-	char	*str;
-
-	fd = open(argv[1], O_RDONLY);
-	i = 0;
-	while (i < 5)
-	{
-		get_next_line(fd, &str);
-		printf("%s\n", str);
-		free(str);
-		i++;
-	}
-  return (0);
-}
-
-```
-```bash
-#Build the program using the following
-$ gcc main.c get_next_line.c get_next_line.h libft/libft.a
-#Run the program
-$ ./a.out test.txt
 ```
 
 ## DISCLAIMER
