@@ -4,8 +4,11 @@
   <br>
 </h1>
 
-
-<!-- {% include youtube.html id="A3QtEFnUzeQ" %} -->
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=A3QtEFnUzeQ" target="_blank" rel="noopener noreferrer">
+    <img src="/fractol_gif.gif"></img>
+  </a>
+</div>
 
 <h3 align="center">Dive into the exciting world of 2D fractals</h3>
 
