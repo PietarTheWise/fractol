@@ -4,8 +4,7 @@
   <br>
 </h1>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A3QtEFnUzeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+{% include youtube.html id="A3QtEFnUzeQ" %}
 
 <h3 align="center">Dive into the exciting world of 2D fractals</h3>
 
