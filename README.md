@@ -13,13 +13,13 @@
 <h3 align="center">Dive into the exciting world of 2D fractals</h3>
 
 <p align="center">
-  <a href="#what-it-does">What it does?</a> •
+  <a href="#what-does-it-do">What does it do?</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#disclaimer">Disclaimer</a>
 </p>
 
 
-## What it does?
+## What does it do?
 
 * Takes in a parameter on the command line from the following 'mandlebrot set' 'julia set' 'burning ship'.
 * You can move forward and backwards into the fractal with your mouse scroll.
