@@ -22,7 +22,7 @@
 ## What it does?
 
 * Takes in a parameter on the command line from the following 'mandlebrot set' 'julia set' 'burning ship'.
-* You can move forward and backwards into the fractal with using your mouse scroll.
+* You can move forward and backwards into the fractal with your mouse scroll.
 * The program zooms into the focus point of your mouse
 * With key <kbd>i</kbd> you can enable multithreading, which makes the window bigger and the program faster
 * By pressing the key <kbd>p</kbd> you can toggle between different fractals.
